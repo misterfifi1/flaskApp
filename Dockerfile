@@ -2,6 +2,7 @@ FROM python:alpine
 
 LABEL maintainer="misterfifi"
 
+RUN touch requirements.txt
 RUN pip install -r requirements.txt
 
 COPY . /opt/app/
