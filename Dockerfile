@@ -2,8 +2,7 @@ FROM python:alpine
 
 LABEL maintainer="misterfifi"
 
-RUN pip install flask
-RUN pip install -r requirement.txt
+RUN pip install -r requirements.txt
 
 COPY . /opt/app/
 
